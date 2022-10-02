@@ -51,7 +51,7 @@ const DrawingCanvas = () => {
       onMouseMove={draw}
       onMouseUp={stopDrawing}
       onMouseLeave={stopDrawing}
-      className="h-[500px] w-[500px] border-2 border-blue-500"
+      className="canvas border-2 border-blue-500"
     ></canvas>
   );
 };
