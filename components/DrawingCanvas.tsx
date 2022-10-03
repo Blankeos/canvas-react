@@ -16,7 +16,12 @@ const DrawingCanvas = () => {
     if (context) {
       context.lineCap = "round";
       context.lineWidth = 5;
-      context.strokeStyle = "white";
+      context.strokeStyle = "darkGray";
+
+      // let url = "https://scoliovis-demo.vercel.app/example_images/3.jpg";
+      // let img = new Image();
+      // await new Promise((r) => (img.onload = r), (img.src = url));
+      // context.context.drawImage();
       contextRef.current = context;
     }
   }, []);
@@ -51,7 +56,7 @@ const DrawingCanvas = () => {
       onMouseMove={draw}
       onMouseUp={stopDrawing}
       onMouseLeave={stopDrawing}
-      className="canvas border-2 border-blue-500"
+      className="canvas border-2 border-black shadow-xl"
     ></canvas>
   );
 };

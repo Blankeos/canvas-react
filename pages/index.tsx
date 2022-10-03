@@ -12,7 +12,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="max-w-5xl bg-gray-800 w-full mx-auto">
+      <main className="max-w-5xl w-full mx-auto">
         <div className="flex flex-col items-center">
           <h1 className="">Canvas Drawing App</h1>
           <DrawingCanvas />
